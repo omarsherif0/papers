@@ -1,0 +1,77 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paper Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .paper-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .authors {
+            color: #555;
+            font-size: 0.95em;
+            margin-bottom: 12px;
+        }
+        .summary {
+            margin-bottom: 12px;
+        }
+        .impact-box {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            border-left: 4px solid #f44336;
+            background-color: #ffebee;
+        }
+        .link {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-card">
+        <div class="title">
+            <a href="https://arxiv.org/abs/2503.20062v2" class="link" target="_blank">
+                Poor Alignment and Steerability of Large Language Models: Evidence from College Admission Essays
+            </a>
+        </div>
+        <div class="authors">
+            <strong>Authors:</strong> Jinsook Lee, AJ Alvero, Thorsten Joachims, René Kizilcec
+        </div>
+        <div class="summary">
+            <strong>Summary:</strong> This paper investigates whether LLMs can mimic human writing styles in high-stakes contexts, specifically college admission essays. By analyzing essays from 30,000 human applicants and comparing them to LLM-generated texts, the authors find that LLMs produce linguistically distinct writing. Furthermore, attempting to "steer" the model using demographic information (sex, race, etc.) is largely ineffective, failing to align the LLM's output with the linguistic patterns of those identity groups. The study highlights a significant issue of homogenization and poor steerability in current LLMs.
+        </div>
+        <div class="impact-box">
+            <strong>Assessment of Importance:</strong>
+            <p><strong>1. Authors' Reputation:</strong> The authors are highly credible researchers from top institutions (Cornell, Stanford). Thorsten Joachims is a renowned figure in machine learning and information retrieval, adding significant weight to the study's technical rigor.</p>
+            <p><strong>2. Subject Significance:</strong> The subject is of high importance and societal relevance. It addresses a critical intersection of AI technology and real-world, high-stakes decision-making (admissions). The findings on "alignment failure" and the risks of homogenization have broad implications for the use of LLMs in professional and creative writing contexts.</p>
+            <p><strong>3. Key Contribution:</strong> The paper provides strong empirical evidence using a large dataset (30,000 essays) to demonstrate a tangible limitation of current LLMs: their inability to adapt to specific human demographic writing styles. This challenges common assumptions about prompt engineering and steerability, making it a valuable cautionary study for practitioners and policymakers.</p>
+            <p><strong>Overall Importance:</strong> <span style="font-weight:bold; color:#f44336;">Very High. This is a well-executed and highly relevant study that identifies a critical limitation in LLM application. It has significant implications for how we use AI in sensitive areas and serves as a benchmark for evaluating model steerability and alignment.</span></p>
+        </div>
+    </div>
+</body>
+</html>
+```
