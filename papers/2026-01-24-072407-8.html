@@ -1,0 +1,77 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paper Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .paper-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .authors {
+            color: #555;
+            font-size: 0.95em;
+            margin-bottom: 12px;
+        }
+        .summary {
+            margin-bottom: 12px;
+        }
+        .impact-box {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            border-left: 4px solid #2e7d32;
+            background-color: #e8f5e9;
+        }
+        .link {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-card">
+        <div class="title">
+            <a href="https://arxiv.org/abs/2601.15812v1" class="link" target="_blank">
+                ErrorMap and ErrorAtlas: Charting the Failure Landscape of Large Language Models
+            </a>
+        </div>
+        <div class="authors">
+            <strong>Authors:</strong> Shir Ashury-Tahan, Yifan Mai, Elron Bandel, Michal Shmueli-Scheuer, Leshem Choshen
+        </div>
+        <div class="summary">
+            <strong>Summary:</strong> This paper introduces ErrorMap, a method to diagnose the underlying causes of LLM failures (e.g., formatting vs. reasoning errors) rather than just measuring task-level success. Applied to 35 datasets and 83 models, it generates ErrorAtlas, a taxonomy that reveals recurring failure patterns and highlights underexplored error types like output omissions and question misinterpretation. The goal is to move beyond success-rate benchmarks to a deeper evaluation layer that guides model improvement and selection.
+        </div>
+        <div class="impact-box">
+            <strong>Assessment of Importance:</strong>
+            <p><strong>1. Authors' Reputation:</strong> The authors are from the IBM Research AI team, a well-established and influential group in the field. Their prior work (e.g., on evaluation, bias, and LLM analysis) lends credibility and suggests this paper is part of a sustained research program.</p>
+            <p><strong>2. Subject Significance:</strong> The topic is fundamental to the progress of AI. Current benchmarks are criticized for being superficial. This work directly addresses a core methodological gap in LLM evaluation by providing a systematic way to understand *why* models fail, which is essential for meaningful improvement and reliable deployment.</p>
+            <p><strong>3. Key Contribution:</strong> The core innovation is a scalable method (ErrorMap) to create a failure taxonomy (ErrorAtlas) that works across models and tasks. By moving the focus from "what" to "why," it provides a new, actionable layer for analysis. The released taxonomy and code have the potential to become a standard reference, shifting the community's evaluation paradigm.</p>
+            <p><strong>Overall Importance:</strong> <span style="font-weight:bold; color:#2e7d32;">Very High. This is a methodologically important paper that addresses a critical and timely challenge in LLM research and evaluation. It provides a tool and a dataset that could significantly influence how the field measures progress and develops models, moving towards more robust and interpretable AI.</span></p>
+        </div>
+    </div>
+</body>
+</html>
+```
