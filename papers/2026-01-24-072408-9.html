@@ -1,0 +1,77 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paper Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .paper-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+        .authors {
+            color: #555;
+            font-size: 0.95em;
+            margin-bottom: 12px;
+        }
+        .summary {
+            margin-bottom: 12px;
+        }
+        .impact-box {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            border-left: 4px solid #c62828;
+            background-color: #ffebee;
+        }
+        .link {
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="paper-card">
+        <div class="title">
+            <a href="https://arxiv.org/abs/2601.15801v1" class="link" target="_blank">
+                Attributing and Exploiting Safety Vectors through Global Optimization in Large Language Models
+            </a>
+        </div>
+        <div class="authors">
+            <strong>Authors:</strong> Fengheng Chu, Jiahao Chen, Yuhong Wang, Jun Wang, Zhihui Fu, Shouling Ji, Songze Li
+        </div>
+        <div class="summary">
+            <strong>Summary:</strong> This paper investigates the safety mechanisms of LLMs, arguing that existing methods fail to capture the cooperative interactions between components. It introduces GOSV (Global Optimization for Safety Vector Extraction), a framework that identifies safety-critical attention heads via simultaneous global optimization. The authors identify two distinct types of safety vectors (Malicious Injection and Safety Suppression) and find that safety breaks down when about 30% of heads are repatched. They then leverage these findings to create a novel and highly effective white-box jailbreak method.
+        </div>
+        <div class="impact-box">
+            <strong>Assessment of Importance:</strong>
+            <p><strong>1. Authors' Reputation:</strong> The authors are from strong institutions including Zhejiang University and Huazhong University of Science and Technology, with representation from industry (Tencent). This combination suggests a solid blend of theoretical and applied security research expertise.</p>
+            <p><strong>2. Subject Significance:</strong> The topic is of paramount importance. Understanding and auditing the internal safety mechanisms of LLMs is a critical subfield of AI security. This paper's focus on the "cooperative" nature of safety components is a step forward in interpretability for safety, a notoriously difficult problem.</p>
+            <p><strong>3. Key Contribution:</strong> The paper's main contribution is the GOSV framework, which provides a more nuanced way to attribute safety to specific model components. The identification of two functionally distinct vector types is an interesting finding. The work's dual nature—providing both interpretability insights and a powerful attack method—makes it a significant contribution to LLM security research, highlighting vulnerabilities to drive defensive improvements.</p>
+            <p><strong>Overall Importance:</strong> <span style="font-weight:bold; color:#c62828;">High. This is a technically strong paper in a high-stakes area (AI safety and security). It presents a novel method for dissecting LLM safety and validates it by developing a superior attack, which is a classic way to demonstrate the depth of understanding. Such work is crucial for advancing both the attack and defense sides of AI security.</span></p>
+        </div>
+    </div>
+</body>
+</html>
+```
